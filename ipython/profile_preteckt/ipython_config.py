@@ -37,6 +37,8 @@ c.InteractiveShellApp.exec_lines = [
     'import preteckt_io.hdf_utils as pu',
     #'import analysis.hdf_utils as au', # this creates some sort of issue with logging
 ]
+# Note - anlaysis not currently working due to issues with logger. See here:
+# https://github.com/davidhalter/parso/issues/9
 
 ## A list of dotted module names of IPython extensions to load.
 #c.InteractiveShellApp.extensions = []
