@@ -113,8 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=/home/rory/bin:$PATH
-
 if [ -f ~/.bash_preteckt ]; then
     . ~/.bash_preteckt
 fi
+
+export PATH=/home/rory/bin:$PATH

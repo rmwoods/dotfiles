@@ -22,6 +22,9 @@ backup $ALIASES
 ln -s $PWD/bashrc $BASHRC
 ln -s $PWD/bash_aliases $ALIASES
 
+# Shortcuts
+. .gnome-shortcuts.sh
+
 # python
 IPYTHON=~/.ipython
 MATPLOTLIBRC=~/.config/matplotlib/matplotlibrc
