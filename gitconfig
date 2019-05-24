@@ -1,0 +1,12 @@
+[user]
+	email = rory@preteckt.com
+	name = Rory Woods
+[core]
+    editor = vim
+[alias]
+    permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+    au = !git add $(git ls-files -o --exclude-standard)
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
