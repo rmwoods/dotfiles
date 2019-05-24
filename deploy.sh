@@ -43,3 +43,11 @@ backup $VIM
 backup $VIMRC # Uncomment once this is finished
 ln -s $PWD/vim $VIM
 ln -s $PWD/vimrc $VIMRC # Uncomment once this is finished
+
+git submodule init
+git submodule update
+
+mkdir -p vim/bundle/black.vim/plugin/
+cd vim/bundle/black.vim/plugin/
+wget https://raw.githubusercontent.com/python/black/master/plugin/black.vim
+

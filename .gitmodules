@@ -1,3 +1,15 @@
-[submodule "flake8"]
-    path = vim/bundle
-	url = https://github.com/nvie/vim-flake8.git
+[submodule "vim-flake8"]
+    path = vim/bundle/vim-flake8
+    url = https://github.com/nvie/vim-flake8.git
+
+[submodule "vim-abolish"]
+    path = vim/bundle/vim-abolish
+    url = https://github.com/tpope/vim-abolish.git
+
+[submodule "nerdtree"]
+    path = vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+
+[submodule "vim/bundle/vim-hardtime"]
+	path = vim/bundle/vim-hardtime
+	url = https://github.com/takac/vim-hardtime.git
