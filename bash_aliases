@@ -9,3 +9,5 @@ alias pyn="ipython3 --profile=standard"
 
 alias tabula="java -Dfile.encoding=utf-8 -Xms256M -Xmx1024M -jar /home/rory/Downloads/tabula/tabula.jar"
 
+alias prune="git remote prune origin"
+alias tags='git tag -l | sort -V'
