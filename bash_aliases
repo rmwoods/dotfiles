@@ -11,3 +11,5 @@ alias tabula="java -Dfile.encoding=utf-8 -Xms256M -Xmx1024M -jar /home/rory/Down
 
 alias prune="git remote prune origin"
 alias tags='git tag -l | sort -V'
+alias gm="cd /home/rory/Preteckt/utils/gm-repo/preteckt_gm/; source env/bin/activate"
+alias beer="cd /home/rory/beer.ai/beer.ai/; source env/bin/activate"

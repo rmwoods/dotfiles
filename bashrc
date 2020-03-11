@@ -118,3 +118,5 @@ if [ -f ~/.bash_preteckt ]; then
 fi
 
 export PATH=/home/rory/bin:$PATH
+export PATH=/usr/local/cuda-9.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
