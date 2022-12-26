@@ -23,26 +23,32 @@ ln -s $PWD/bashrc $BASHRC
 ln -s $PWD/bash_aliases $ALIASES
 
 # Shortcuts
-. .gnome-shortcuts.sh
+#. .gnome-shortcuts.sh
 
 # python
-IPYTHON=~/.ipython
-MATPLOTLIBRC=~/.config/matplotlib/matplotlibrc
+IPYTHON_DIR=~/.ipython
+MATPLOTLIBRC_DIR=~/.config/matplotlib
+MATPLOTLIBRC=${MATPLOTLIBRC_DIR}/matplotlibrc
 
-backup $IPYTHON
+mkdir -p $IPYTHON_DIR
+backup $IPYTHON_DIR
+
+mkdir -p $MATPLOTLIBRC_DIR
 backup $MATPLOTLIBRC
 
-ln -s $PWD/ipython $IPYTHON
+ln -s $PWD/ipython $IPYTHON_DIR
 ln -s $PWD/matplotlibrc $MATPLOTLIBRC
 
 # VIM
 VIMRC=~/.vimrc
-VIM=~/.vim
+VIM_DIR=~/.vim
 
-backup $VIM
-backup $VIMRC # Uncomment once this is finished
-ln -s $PWD/vim $VIM
-ln -s $PWD/vimrc $VIMRC # Uncomment once this is finished
+mkdir -p $VIM_DIR
+backup $VIM_DIR
+ln -s $PWD/vim $VIM_DIR
+
+backup $VIMRC
+ln -s $PWD/vimrc $VIMRC
 
 # Git
 GIT=~/.gitconfig
@@ -54,6 +60,8 @@ ln -s $PWD/gitconfig $GIT
 git submodule init
 git submodule update
 
-mkdir -p vim/bundle/black.vim/plugin/
-cd vim/bundle/black.vim/plugin/
+VIM_BLACK=vim/bundle/black.vim/plugin/
+mkdir -p $VIM_BLACK
+cd $VIM_BLACK
 wget https://raw.githubusercontent.com/python/black/master/plugin/black.vim
+cd $PWD
